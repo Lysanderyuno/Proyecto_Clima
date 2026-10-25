@@ -23,7 +23,7 @@ def mostrar_clima(datos: dict) -> None:
     humedad: int = datos.get("main", {}).get("humidity", 0)
     descripcion: str = datos.get("weather", [{}])[0].get("description", "").capitalize()
 
-    tabla = Table(title=f"Clima en {nombre_ciudad}, {pais}", style="bold cyan")
+    tabla = Table(title=f"Clima en {nombre_ciudad}, {pais}", style="violet")
     tabla.add_column("Métrica", style="bold white", justify="left")
     tabla.add_column("Valor", style="green", justify="right")
 
@@ -37,16 +37,16 @@ def mostrar_clima(datos: dict) -> None:
 
 def main() -> None:
     """Función principal que ejecuta el bucle de la aplicación de consola."""
-    console.print(Panel.fit("[bold blue]Bienvenido a la App de Clima[/bold blue]"))
+    console.print(Panel.fit("[bold blue]¡Bienvenido! ¿Quieres saber cómo está el clima en algun lugar?[/bold blue]"))
 
     while True:
         try:
-            ciudad: str = input("\nIngrese el nombre de la ciudad (o 'salir' para finalizar): ").strip()
+            ciudad: str = input("\nIngrese el nombre de la ciudad o país (o 'salir' para finalizar): ").strip()
             if not ciudad:
                 console.print("[bold yellow]Por favor, ingrese un nombre válido.[/bold yellow]")
                 continue
             if ciudad.lower() == "salir":
-                console.print("[bold green]¡Gracias por usar la aplicación![/bold green]")
+                console.print("[bold green]¡Gracias nos vemos hasta la próxima visita![/bold green]")
                 break
 
             console.print("[dim]Consultando datos...[/dim]")
