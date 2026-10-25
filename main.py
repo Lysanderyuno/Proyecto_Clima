@@ -6,7 +6,7 @@ from rich.table import Table
 from Pronostico_Clima import obtener_datos_clima
 
 # Reemplaza con tu API Key gratuita de OpenWeatherMap
-API_KEY: str = "TU_API_KEY_AQUI"
+API_KEY: str = "5cee196c513508d3ca93ad83e3fad172" 
 console = Console()
 
 

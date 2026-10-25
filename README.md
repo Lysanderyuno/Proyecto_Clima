@@ -13,6 +13,8 @@ Aplicación interactiva de consola desarrollada en Python que permite consultar 
 ## Instalación
 
 1. Clonar el repositorio:
-   ```bash
-   git clone [https://github.com/TU_USUARIO/clima_consola.git](https://github.com/TU_USUARIO/clima_consola.git)
-   cd clima_consola
+
+```bash
+git clone https://github.com/Lysanderyuno/clima_consola.git
+cd clima_consola
+```
